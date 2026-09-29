@@ -1,4 +1,4 @@
-# AI Skills
+# Project Bootstrap Skills
 
 AI coding agents are only as good as the expectations you give them. Hand an agent a vague idea and it fills the gaps with guesses. Hand it a clear, agreed definition of what to build and it has something concrete to deliver against.
 
@@ -116,13 +116,13 @@ These are the paths the [skills CLI](https://github.com/vercel-labs/skills) inst
 
 ```bash
 # See what's in the repo
-npx skills add mifkata/ai-skills --list
+npx skills add mifkata/project-bootstrap-skills --list
 
 # Install one skill; you'll be asked which agents to install it for
-npx skills add mifkata/ai-skills --skill product-architect
+npx skills add mifkata/project-bootstrap-skills --skill product-architect
 
 # Or name the agents, and add -g to install globally instead of into the current project
-npx skills add mifkata/ai-skills --skill product-architect -a claude-code -a codex -g
+npx skills add mifkata/project-bootstrap-skills --skill product-architect -a claude-code -a codex -g
 ```
 
 - **Agent IDs:** `claude-code`, `codex`, `cursor`, `github-copilot`, `gemini-cli`, `opencode`, and more (see `npx skills --help`).
@@ -138,7 +138,7 @@ npx skills add mifkata/ai-skills --skill product-architect -a claude-code -a cod
 DEST=~/.claude/skills          # or .agents/skills, ~/.codex/skills, ...
 SKILL=product-architect
 mkdir -p "$DEST/$SKILL"
-curl -fsSL "https://raw.githubusercontent.com/mifkata/ai-skills/main/$SKILL/SKILL.md" \
+curl -fsSL "https://raw.githubusercontent.com/mifkata/project-bootstrap-skills/main/$SKILL/SKILL.md" \
   -o "$DEST/$SKILL/SKILL.md"
 ```
 
@@ -148,8 +148,8 @@ curl -fsSL "https://raw.githubusercontent.com/mifkata/ai-skills/main/$SKILL/SKIL
 DEST=~/.claude/skills
 SKILL=product-architect
 mkdir -p "$DEST"
-curl -fsSL https://github.com/mifkata/ai-skills/archive/refs/heads/main.tar.gz \
-  | tar -xz -C "$DEST" --strip-components=1 "ai-skills-main/$SKILL"
+curl -fsSL https://github.com/mifkata/project-bootstrap-skills/archive/refs/heads/main.tar.gz \
+  | tar -xz -C "$DEST" --strip-components=1 "project-bootstrap-skills-main/$SKILL"
 ```
 
 For options 2 and 3:
@@ -161,7 +161,7 @@ For options 2 and 3:
 ### Install all skills
 
 ```bash
-npx skills add mifkata/ai-skills --skill '*'
+npx skills add mifkata/project-bootstrap-skills --skill '*'
 ```
 
 Or without tooling:
@@ -171,7 +171,7 @@ DEST=~/.claude/skills
 for SKILL in product-architect improvement-researcher high-level-auditor \
              high-level-summary system-architect roadmap-architect beads-manager; do
   mkdir -p "$DEST/$SKILL"
-  curl -fsSL "https://raw.githubusercontent.com/mifkata/ai-skills/main/$SKILL/SKILL.md" \
+  curl -fsSL "https://raw.githubusercontent.com/mifkata/project-bootstrap-skills/main/$SKILL/SKILL.md" \
     -o "$DEST/$SKILL/SKILL.md"
 done
 ```
@@ -179,8 +179,8 @@ done
 If you'd rather track updates with git, clone the repo and symlink the folders you want:
 
 ```bash
-git clone https://github.com/mifkata/ai-skills.git ~/src/ai-skills
-ln -s ~/src/ai-skills/product-architect ~/.claude/skills/product-architect
+git clone https://github.com/mifkata/project-bootstrap-skills.git ~/src/project-bootstrap-skills
+ln -s ~/src/project-bootstrap-skills/product-architect ~/.claude/skills/product-architect
 ```
 
 ## Using the skills
