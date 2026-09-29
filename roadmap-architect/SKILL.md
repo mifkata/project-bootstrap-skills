@@ -1,6 +1,7 @@
 ---
 name: roadmap-architect
 description: Sequence docs/high-level-spec/ and docs/tech-spec/ into an implementation roadmap under docs/roadmap/ — dependency graph, gates, milestones. Interactive only; proposes every ordering/grouping choice, never selects alone. Manual invocation only.
+license: MIT
 argument-hint: "[scope: tech domain codes, module IDs or HLS feature IDs; default all]"
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep

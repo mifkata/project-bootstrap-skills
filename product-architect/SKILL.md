@@ -1,6 +1,7 @@
 ---
 name: product-architect
 description: Decompose a product description document into non-technical, high-level requirements under docs/high-level-spec/, one file per domain/feature/scope item, for a downstream System Architect agent. Manual invocation only.
+license: MIT
 argument-hint: <path-to-product-doc>
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep

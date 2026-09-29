@@ -1,6 +1,7 @@
 ---
 name: high-level-auditor
 description: Audit docs/high-level-spec/ for legal/compliance exposure and logic holes (edge cases, contradictions, unreachable or abusable flows) before anything is built, and modify the spec in place. Legal obligations are written directly as constraints; feature/workflow/scope changes are proposed and applied on confirmation. Manual invocation only.
+license: MIT
 argument-hint: "[scope: HLS domain codes or feature IDs; default all]"
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep, WebSearch, WebFetch

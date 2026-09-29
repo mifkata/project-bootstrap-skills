@@ -1,6 +1,7 @@
 ---
 name: system-architect
 description: Turn docs/high-level-spec/ into a technical spec under docs/tech-spec/, decomposed into domains → modules → sub-modules, one file per ID. Proposes options for every technical choice; never selects one without user confirmation. Manual invocation only.
+license: MIT
 argument-hint: "[scope: domain codes and/or high-level feature IDs; default all]"
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep, WebSearch, WebFetch

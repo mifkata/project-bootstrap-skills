@@ -1,6 +1,7 @@
 ---
 name: improvement-researcher
 description: Research and propose feature improvements for docs/high-level-spec/ — polish, missing companion features, friction, retention, differentiation — backed by spec gaps and comparable-product research. Every proposal needs user acceptance; accepted ones are written into the spec as regular features. Runs before high-level-auditor. Manual invocation only.
+license: MIT
 argument-hint: "[scope: HLS domain codes or feature IDs] [limit:N per domain, default 5]"
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep, WebSearch, WebFetch

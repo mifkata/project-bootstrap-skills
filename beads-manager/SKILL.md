@@ -1,6 +1,7 @@
 ---
 name: beads-manager
 description: Materialize docs/high-level-spec, docs/tech-spec and docs/roadmap into a beads (bd) work graph — domain epic → feature epic → sub-feature epic → tasks/stories/bugs/chores/spikes — serially chained so exactly one sub-feature epic is executable at a time behind a review gate. Interactive; proposes, never decides. Manual invocation only.
+license: MIT
 argument-hint: "[scope: milestone IDs, tech domain codes or module IDs; default all accepted milestones]"
 disable-model-invocation: true
 allowed-tools: Read, Glob, Grep, Bash(bd version:*), Bash(bd where:*), Bash(bd info:*), Bash(bd list:*), Bash(bd show:*), Bash(bd ready:*), Bash(bd gate list:*), Bash(bd epic status:*), Bash(bd lint:*), Bash(bd types:*)

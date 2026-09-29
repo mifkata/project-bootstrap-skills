@@ -1,1 +1,33 @@
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local agent / tool state
+.serena/
+.claude/settings.local.json
+.beads/
+.env
+.env.*
+
+# Output from trying the skills out in this repo
+/docs/high-level-spec/
+/docs/tech-spec/
+/docs/roadmap/
+/docs/beads/
+
+# Packaged skills and archives
+dist/
+*.skill
+*.zip
+*.tar.gz
+
+# Logs
+*.log
